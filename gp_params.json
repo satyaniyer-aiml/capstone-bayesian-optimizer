@@ -1,0 +1,66 @@
+{
+  "F1": {
+    "acquisition": "ucb",
+    "kernel": "matern52",
+    "kappa": 2.5,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": 2.5
+  },
+  "F2": {
+    "acquisition": "ucb",
+    "kernel": "matern52",
+    "kappa": 2.0,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": 2.5
+  },
+  "F3": {
+    "acquisition": "ei",
+    "kernel": "matern52",
+    "kappa": 1.96,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": 2.5
+  },
+  "F4": {
+    "acquisition": "ei",
+    "kernel": "matern52",
+    "kappa": 1.96,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": 2.5
+  },
+  "F5": {
+    "acquisition": "ei",
+    "kernel": "matern52",
+    "kappa": 1.96,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": 2.5
+  },
+  "F6": {
+    "acquisition": "ucb",
+    "kernel": "matern52",
+    "kappa": 2.0,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": 2.5
+  },
+  "F7": {
+    "acquisition": "ei",
+    "kernel": "matern52",
+    "kappa": 1.96,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": 2.5
+  },
+  "F8": {
+    "acquisition": "ei",
+    "kernel": "rbf",
+    "kappa": 1.96,
+    "constant_value": 1.0,
+    "length_scale": 1.0,
+    "nu": null
+  }
+}
