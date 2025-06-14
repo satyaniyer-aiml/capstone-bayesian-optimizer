@@ -28,8 +28,8 @@ with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as backup_zip:
                     file_path = os.path.join(root, file)
                     arcname = os.path.relpath(file_path, start=os.getcwd())
                     backup_zip.write(file_path, arcname)
-            print(f"? Added '{folder}' folder to backup ZIP.")
+            print(f"Added '{folder}' folder to backup ZIP.")
         else:
-            print(f"?? Warning: '{folder}' folder not found. Skipped.")
+            print(f"Warning: '{folder}' folder not found. Skipped.")
 
-print(f"\n? Full backup ZIP created at: {zip_filename}")
+print(f"\nFull backup ZIP created at: {zip_filename}")

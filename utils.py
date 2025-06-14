@@ -62,9 +62,9 @@ def plot_gp(model, bounds, dim, X_train, y_train):
         mu_train, _ = model.predict(X_train)
         mae = np.mean(np.abs(mu_train - y_train))
         if mae < 0.1:
-            print("? GP fitting looks good: model matches training points.")
+            print("GP fitting looks good: model matches training points.")
         else:
-            print("?? Warning: GP fitting may be poor; mean deviates from data.")
+            print("Warning: GP fitting may be poor; mean deviates from data.")
 
     elif dim == 2:
         x1 = np.linspace(bounds[0][0], bounds[0][1], 50)

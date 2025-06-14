@@ -62,5 +62,13 @@
     "constant_value": 1.0,
     "length_scale": 1.0,
     "nu": null
+  },
+  "F0": {
+    "acquisition": "ei",
+    "kernel": "rbf",
+    "kappa": 1.96,
+    "constant_value": 4492.584962053475,
+    "length_scale": 9.657030924340754,
+    "nu": null
   }
 }

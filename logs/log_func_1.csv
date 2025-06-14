@@ -1,2 +1,6 @@
 iteration,acquisition,kernel,best_y_so_far
 11,ucb,matern52,7.710875114502849e-16
+20,ucb,matern52,0.0127796426699149
+28,ucb,matern52,0.470942466450079
+32,ucb,matern52,1.1231826070262765
+34,ucb,matern52,1.1231826070262765

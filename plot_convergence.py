@@ -36,4 +36,4 @@ for func_id in range(1, 9):
 
     print(f"Saved convergence plot for Function {func_id}.")
 
-print("\n? All convergence plots saved in 'plots/' folder.")
+print("\nAll convergence plots saved in 'plots/' folder.")
