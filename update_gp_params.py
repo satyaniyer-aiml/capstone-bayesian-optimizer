@@ -33,7 +33,7 @@ def suggest_new_params(current_params, stagnated):
         new_params["acquisition"] = "ei"
         reason.append("Switched acquisition from 'ucb' to 'ei' due to stagnation to encourage exploration.")
     elif stagnated and current_params.get("acquisition") == "ei":
-        new_params["acquisition"] = "poi"
+        new_params["acquisition"] = "pi"
         reason.append("Switched acquisition from 'ei' to 'poi' due to continued stagnation.")
 
     if stagnated and current_params.get("kernel") == "matern52":

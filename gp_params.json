@@ -32,11 +32,11 @@
     "nu": 2.5
   },
   "F5": {
-    "acquisition": "ei",
+    "acquisition": "poi",
     "kernel": "matern52",
-    "kappa": 1.96,
-    "constant_value": 1.0,
-    "length_scale": 1.0,
+    "kappa": 2.46,
+    "constant_value": 1.5,
+    "length_scale": 1.2,
     "nu": 2.5
   },
   "F6": {
@@ -67,8 +67,8 @@
     "acquisition": "ei",
     "kernel": "rbf",
     "kappa": 1.96,
-    "constant_value": 4492.584962053475,
-    "length_scale": 9.657030924340754,
+    "constant_value": 100000.00000000001,
+    "length_scale": 23.085291559493605,
     "nu": null
   }
 }

@@ -23,7 +23,13 @@ class BlackBoxOptimizer:
         # Build kernel from parameter config
         const_val = self.params.get("constant_value", 1.0)
         length_scale = self.params.get("length_scale", 1.0)
-        nu = self.params.get("nu", 2.5)
+
+	if self.kernel_type == 'matern52':
+	    nu = 2.5
+	elif self.kernel_type == 'matern32':
+	    nu = 1.5
+	else:
+	    nu = self.params.get("nu", 2.5)  # fallback
 
         if self.kernel_type == 'matern52':
             kernel = ConstantKernel(const_val) * Matern(length_scale=length_scale, nu=nu) + WhiteKernel()
@@ -72,7 +78,7 @@ class BlackBoxOptimizer:
             y_best = np.max(self.y_train)
             z = (mu - y_best) / (sigma + 1e-9)
             return (mu - y_best) * norm.cdf(z) + sigma * norm.pdf(z)
-        elif self.acquisition_type == 'pi':
+        elif self.acquisition_type == 'poi':
             y_best = np.max(self.y_train)
             z = (mu - y_best) / (sigma + 1e-9)
             return norm.cdf(z)
