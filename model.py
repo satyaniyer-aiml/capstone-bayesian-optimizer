@@ -24,14 +24,14 @@ class BlackBoxOptimizer:
         const_val = self.params.get("constant_value", 1.0)
         length_scale = self.params.get("length_scale", 1.0)
 
-	if self.kernel_type == 'matern52':
-	    nu = 2.5
-	elif self.kernel_type == 'matern32':
-	    nu = 1.5
-	else:
-	    nu = self.params.get("nu", 2.5)  # fallback
-
         if self.kernel_type == 'matern52':
+            nu = 2.5
+        elif self.kernel_type == 'matern32':
+            nu = 1.5
+        else:
+            nu = self.params.get("nu", 2.5)  # fallback
+
+        if self.kernel_type in ['matern52', 'matern32']:
             kernel = ConstantKernel(const_val) * Matern(length_scale=length_scale, nu=nu) + WhiteKernel()
         elif self.kernel_type == 'rbf':
             kernel = ConstantKernel(const_val) * RBF(length_scale=length_scale) + WhiteKernel()
@@ -47,7 +47,7 @@ class BlackBoxOptimizer:
 
             # Save learned parameters back to config
             k = self.gp.kernel_
-            if self.kernel_type == 'matern52':
+            if self.kernel_type in ['matern52', 'matern32']:
                 learned = {
                     "acquisition": self.acquisition_type,
                     "kernel": self.kernel_type,

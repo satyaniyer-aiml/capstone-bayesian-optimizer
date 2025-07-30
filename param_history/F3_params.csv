@@ -1,0 +1,4 @@
+acquisition,kernel,kappa,constant_value,length_scale,nu,iteration_tag
+poi,matern32,2.46,1.5,1.2,3.0,2025-07-28T14:23:25.025675
+poi,matern32,2.46,1.5,1.2,3.0,2025-07-28T14:28:08.502753
+poi,matern32,2.46,1.5,1.2,3.0,2025-07-28T14:28:51.186665

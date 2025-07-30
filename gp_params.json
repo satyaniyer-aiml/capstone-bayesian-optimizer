@@ -1,51 +1,51 @@
 {
   "F1": {
-    "acquisition": "ucb",
-    "kernel": "matern52",
-    "kappa": 2.5,
-    "constant_value": 1.0,
-    "length_scale": 1.0,
-    "nu": 2.5
+    "acquisition": "poi",
+    "kernel": "matern32",
+    "kappa": 4.0,
+    "constant_value": 3.38,
+    "length_scale": 1.73,
+    "nu": 3.0
   },
   "F2": {
-    "acquisition": "ucb",
-    "kernel": "matern52",
-    "kappa": 2.0,
-    "constant_value": 1.0,
-    "length_scale": 1.0,
-    "nu": 2.5
+    "acquisition": "poi",
+    "kernel": "matern32",
+    "kappa": 3.5,
+    "constant_value": 3.38,
+    "length_scale": 1.73,
+    "nu": 3.0
   },
   "F3": {
-    "acquisition": "ei",
-    "kernel": "matern52",
-    "kappa": 1.96,
-    "constant_value": 1.0,
-    "length_scale": 1.0,
-    "nu": 2.5
-  },
-  "F4": {
-    "acquisition": "ei",
-    "kernel": "matern52",
-    "kappa": 1.96,
-    "constant_value": 1.0,
-    "length_scale": 1.0,
-    "nu": 2.5
-  },
-  "F5": {
     "acquisition": "poi",
-    "kernel": "matern52",
+    "kernel": "matern32",
     "kappa": 2.46,
     "constant_value": 1.5,
     "length_scale": 1.2,
-    "nu": 2.5
+    "nu": 3.0
+  },
+  "F4": {
+    "acquisition": "poi",
+    "kernel": "matern32",
+    "kappa": 2.46,
+    "constant_value": 1.5,
+    "length_scale": 1.2,
+    "nu": 3.0
+  },
+  "F5": {
+    "acquisition": "poi",
+    "kernel": "matern32",
+    "kappa": 4.46,
+    "constant_value": 7.61,
+    "length_scale": 2.5,
+    "nu": 3.0
   },
   "F6": {
-    "acquisition": "ucb",
-    "kernel": "matern52",
-    "kappa": 2.0,
-    "constant_value": 1.0,
-    "length_scale": 1.0,
-    "nu": 2.5
+    "acquisition": "ei",
+    "kernel": "matern32",
+    "kappa": 2.5,
+    "constant_value": 1.5,
+    "length_scale": 1.2,
+    "nu": 3.0
   },
   "F7": {
     "acquisition": "ei",
@@ -56,19 +56,19 @@
     "nu": 2.5
   },
   "F8": {
-    "acquisition": "ei",
+    "acquisition": "poi",
     "kernel": "rbf",
-    "kappa": 1.96,
-    "constant_value": 1.0,
-    "length_scale": 1.0,
-    "nu": null
+    "kappa": 2.46,
+    "constant_value": 1.5,
+    "length_scale": 1.2,
+    "nu": 3.0
   },
   "F0": {
-    "acquisition": "ei",
+    "acquisition": "poi",
     "kernel": "rbf",
-    "kappa": 1.96,
+    "kappa": 2.46,
     "constant_value": 100000.00000000001,
-    "length_scale": 23.085291559493605,
+    "length_scale": 23.695205737788516,
     "nu": null
   }
 }

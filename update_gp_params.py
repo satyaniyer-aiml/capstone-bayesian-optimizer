@@ -33,7 +33,7 @@ def suggest_new_params(current_params, stagnated):
         new_params["acquisition"] = "ei"
         reason.append("Switched acquisition from 'ucb' to 'ei' due to stagnation to encourage exploration.")
     elif stagnated and current_params.get("acquisition") == "ei":
-        new_params["acquisition"] = "pi"
+        new_params["acquisition"] = "poi"
         reason.append("Switched acquisition from 'ei' to 'poi' due to continued stagnation.")
 
     if stagnated and current_params.get("kernel") == "matern52":
@@ -60,7 +60,7 @@ def suggest_new_params(current_params, stagnated):
         reason.append(f"Increased length_scale from {old_scale} to {new_scale} to smooth the GP's predictions.")
 
     if "nu" in current_params:
-        old_nu = current_params["nu"]
+        old_nu = float(current_params.get("nu", 2.5))
         new_nu = min(old_nu + 0.5, 3.0)
         if stagnated and new_nu != old_nu:
             new_params["nu"] = new_nu
