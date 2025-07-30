@@ -28,7 +28,7 @@ This project is a capstone exercise focused on using **Bayesian Optimization wit
 └── README.md               # This file
 ```
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 python main.py
@@ -39,11 +39,11 @@ You will be prompted to submit for all 8 functions, one at a time. The system:
 - Logs progress
 - Stores updated model and recommendation
 
-## 🧠 Parameter Tracking
+## Parameter Tracking
 
 Hyperparameters for each function (e.g., kernel type, kappa, length scale) are saved to `gp_params.json` and updated automatically after each model training.
 
-## 📊 Visualizing
+## Visualizing
 
 You can visualize any 1D or 2D GP model with:
 
@@ -51,7 +51,7 @@ You can visualize any 1D or 2D GP model with:
 python plot_gp_individual.py
 ```
 
-## 🔧 Dependencies
+## Dependencies
 
 Install packages with:
 
@@ -59,6 +59,6 @@ Install packages with:
 pip install -r requirements.txt
 ```
 
-## 📜 License
+## License
 
 This project is open for academic and personal use.
